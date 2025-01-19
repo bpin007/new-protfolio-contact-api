@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose.connect(process.env.MONGO_CONNECTION_KEY, {
-  serverSelectionTimeoutMS: 10000,
+  serverSelectionTimeoutMS: 60000,
   tls: true,
   tlsAllowInvalidCertificates: false,
 });
